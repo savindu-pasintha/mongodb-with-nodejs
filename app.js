@@ -7,7 +7,7 @@ var cookieParser = require('cookie-parser')
 var logger = require('morgan')
 var cors = require('cors')
 
-//var bodyParser = require('body-parser');
+//var bodyParser = require('body-parser');35Cvo5apGYHvAMNY
 //app.use(bodyParser.json());// support parsing of application/json type post data
 //app.use(bodyParser.urlencoded({ extended: true }));//support parsing of application/x-www-form-urlencoded post data
 //GraphQl with expressexpress-graphql
@@ -44,7 +44,7 @@ app.use('/mongoose', mongooseBook) //http://localhost:5000/mongoose/book
 
 mongoose
   .connect(
-    'mongodb+srv://savindumongodb:35Cvo5apGYHvAMNY@cluster0.3j6vlx5.mongodb.net/sample_db1?retryWrites=true&w=majority',
+    'mongodb+srv://savindumongodb:password@cluster0.3j6vlx5.mongodb.net/sample_db1?retryWrites=true&w=majority',
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
