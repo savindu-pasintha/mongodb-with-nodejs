@@ -1,6 +1,6 @@
 {
+   "installCommand":"npm install --legacy-peer-deps",
   "version":2,
-  "installCommand":"npm install --force",
   "builds":[
     {
       "src":"./app.js",
