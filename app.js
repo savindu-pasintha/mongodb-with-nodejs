@@ -14,7 +14,7 @@ var cors = require('cors')
 // var { graphqlHTTP } = require('express-graphql')
 // var { buildSchema, graphql } = require('graphql')
 //Here You Can Import All The Http EndPoint Source File Inside The Route Folder
-var indexRouter = require('./routes/index')
+//var indexRouter = require('./routes/index')
 var usersRouter = require('./routes/users')
 var jwtAuthenticationRouter = require('./routes/jwt_authentication')
 var cheaprestobysavinduRouter = require('./routes/cheaprestobysavindu')
@@ -35,8 +35,8 @@ app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
 //Here You Can Define All The Https/Http Endpoints
-app.use('/', indexRouter) //http://localhost:5000/layout,error
-app.use('/user', usersRouter) //http://localhost:5000/users
+//app.use('/', indexRouter) //http://localhost:5000/layout,error
+app.use('/', usersRouter) //http://localhost:5000/users
 app.use('/jwt', jwtAuthenticationRouter) //http://localhost:5000/jwt/login
 app.use('/api/cheapresto', cheaprestobysavinduRouter) //http://localhost:5000/api/cheapresto
 app.use('/google', googleLogin) //http://localhost:5000/google/api/signin
