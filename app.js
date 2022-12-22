@@ -23,8 +23,8 @@ var mongooseBook = require('./mongodb/controllers/bookController')
 
 // View Engine Setup
 var app = express()
-app.set('views', path.join(__dirname, 'views'))
-app.set('view engine', 'jade')
+//app.set('views', path.join(__dirname, 'views'))
+//app.set('view engine', 'jade')
 app.use(express.json())
 app.use(
   express.urlencoded({ extended: false }),
